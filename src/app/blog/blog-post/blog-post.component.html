@@ -1,0 +1,10 @@
+<div class="blog-container">
+    <h1 class="blog-title">{{ blog?.title }}</h1>
+    <p class="blog-date">{{ blog?.date }}</p>
+    <img *ngIf="blog?.coverImage" [src]="blog.coverImage" class="blog-image">
+    <p class="blog-content">{{ blog?.content }}</p>
+    <p class="meta-info">Views: {{ blog?.views }}</p>
+
+    <button *ngIf="isAdmin" (click)="editBlog()" class="edit-btn">✏️ Edit</button>
+    <button *ngIf="isAdmin" (click)="deleteBlog()" class="delete-btn">🗑️ Delete</button>
+</div>

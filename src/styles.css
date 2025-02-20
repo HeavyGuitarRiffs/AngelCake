@@ -1,0 +1,105 @@
+/* Global Styles */
+.test {
+  color: blue;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.index-page {
+  margin: 10px;
+  background-image: url('/assets/img/gardevoircard.jpg');
+  opacity: 100%;
+  background-size: contain; /* Ensure the entire image fits within the viewport */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body.contact-page {
+  background-image: url('assets/img/AngelNgoc.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  height: 100vh !important;
+  margin: 0 !important;
+}
+
+/* Default Styles */
+div {
+  color: black;
+  background-color: lightgreen;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* Background Images */
+.gardevoir-card {
+  background-image: url('/assets/img/gardevoircard.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.angel-ngoc {
+  background-image: url('assets/img/AngelNgoc.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Footer */
+.text-center {
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* ✅ Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* ✅ Table Images - Ensure they are displayed properly */
+td img {
+  width: 20px; /* Set width */
+  height: 20px; /* Set height */
+  object-fit: cover; /* Ensure images scale properly */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ Hover effect for images */
+td img:hover {
+  transform: scale(1.1);
+}
+

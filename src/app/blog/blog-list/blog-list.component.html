@@ -1,0 +1,12 @@
+<div class="blog-container">
+    <h1>Saved Blog Posts</h1>
+    <div *ngFor="let blog of blogs">
+        <a [routerLink]="['/blog', blog.id]" class="thumbnail-container">
+            <img [src]="blog.coverImage ? blog.coverImage : 'assets/default-thumbnail.jpg'" class="thumbnail">
+        </a>
+        <h2 class="blog-title">
+            <a [routerLink]="['/blog', blog.id]">{{ blog.title }}</a>
+        </h2>
+        <p class="meta-info">Views: {{ blog.views }} | Reads: {{ blog.reads }}</p>
+    </div>
+</div>

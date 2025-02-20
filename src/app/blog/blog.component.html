@@ -1,0 +1,6 @@
+<h1>Blog Posts</h1>
+<div *ngFor="let blog of blogs">
+  <h2>{{ blog.title }}</h2>
+  <p>{{ blog.content }}</p>
+  <a [routerLink]="['/blog', blog._id]">Read More</a>
+</div>
