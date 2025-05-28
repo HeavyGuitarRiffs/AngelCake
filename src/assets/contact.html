@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ngoc B3@()+y</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+</head>
+<body class="contact-page" ng-app="myApp">
+
+
+  <!-- ✅ Navbar with Normal Page Links -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Ngoc B3@()+y</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/assets/about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/anime.html">Anime</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/blog.html">Blog</a></li> <!-- 🔥 Dynamic Blog -->
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Main Page Content -->
+  <div class="container-fluid bg-success text-white text-center" style="padding:100px 20px; margin-top: 80px;">
+    <h1>Nhật ký Journal</h1>
+    <p>Tôi tạo ra ứng dụng này vì bạn là một cô nàng Pretty Tiger Darling...</p>
+    <p>I made this app for you since you are a Pretty Tiger Darling...</p>
+  </div>
+
+  <style>
+    body {
+      background-image: url('assets/img/AngelNgoc.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+  </style>
+  
+
+  <div id="section2" class="container-fluid bg-warning text-center" 
+  style="padding:100px 20px; background-image: url('assets/img/ABCDEaugust24.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+ <h1>Section 2</h1>
+ <p>Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+
+  <div id="section3" class="container-fluid bg-secondary text-white text-center" style="padding:100px 20px;">
+    <h1>Section 3</h1>
+    <p>Another section to test scrolling.</p>
+  </div>
+
+  <div class="container mt-5 text-center">
+    <h1>Contact</h1>
+    <p>Reach out to me via email or phone.</p>
+  </div>
+
+  <table>
+  <tr>
+    <td>
+        <a href="https://www.tutorialspoint.com/angular/angular-cli.htm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qAb3e9auwnxJ1RmaypTdsieWkl2wb4u3cg&s" alt="Photo 1">
+        </a>
+    </td>
+    <td>
+        <a href="https://www.chess.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1024px-Icon_of_Zalo.svg.png" alt="Photo 1">
+        </a>
+    </td>
+    <td>
+        <a href="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEXBISf///+8AAC+AAXuzs/VfX+/Ehu/ABC+BhLiqKnAGyHUenzAGB++AAjJSU3Sc3Xrxcb46erksLHZioy/DxjNW179+fnmt7jHQ0fXhYfpwMHPZmn68fH03t7Sb3Lbj5HEMDXx19jempz25OTOYGPDKC3ELzTls7TgoqNXqM/SAAAIkklEQVR4nOWda5uqKhiGFQsal3bU1CyzZtrT//+FGzWnTEUhUMDn22pZw30B7wkEwxSu42kW3M/zxF+G/91uhnFLw6WfzM/3YHY6iv/zhsgf/z5ckxAA4KKFBx3bNkrZtgO9BXLx/4Wr6+FbZCNEEW6C3RKjLeATq1k2XGDQ5S7YCGqJCMLNduUA5HWxVTg9BJzVVgQld8J1ZAAEKeCegggY0Zp3g7gS7oMYWFR9V+9LC8TBnmejOBIeYtbOq3VlfODXLF6Elwi5PPAekC6KLpxaxodwGwJ+eA9IEG65tI0D4XFnoU/mXptsZO04GNePCU8J8ATgFfJAchqZ8OJzH55VQeBfRiQ8+cARypfJAf5H/fgB4SYegK9gjD+Yj8yE+0jw+HwVBBFzFMBK+OWKsy9N8tyvQQkvqTsoXyY3vQxH+A+I8H9dssG/gQjXcNgB+pQHGTIPesIEjMSXCSTCCWejdWAhD87EEu5GmYGvssFOIOExRCPzZUIhVYWOhnA9UAzTJQfQGBwKwvOYJqYqcBZB+DO8k2+X+8Od8JiOa0Pf5aV9J2NPwhOSYwo+5aCeOVU/wvXoTqIuu6e96UX4K4+NeRX45UV4lxMQI975EF5lBcSIVx6EErnBuno4xk5CqQH7IHYRSjxEC3UO1A5CaY3MU13mhkwoqZuoqsNpEAnXKgBiRKLrJxGe1ADEiKQAjkB4FLKiJEI2IoThBMJUtmC7XU7KQvgjV7pElteeL7YSnmVKeLtltbrFNkJFzOhTrQa1hfCoGiDuxRZr00IYqmNlSjkhDeFOhroorVBzqbiRcKbeGM0EGgv+jYSdGwrllA37EiYqecJXeU0rUw2EyjmKp5pcRgPhcBsQ+KthnNYJ/6k6RjN59YXwGuFF3TGaCVw6CVM17Wgpu5ZlvBN+qRVw11Xbd/NGuFcdECPuiYSRymamkBeRCDdqm5lCYEMgjFX2haVg3E6oTHGNrGrprULoq5cVNsnx2wgVd/ZPVdz+K6EmXfjWiS+EmszCTK8z8YUw0cGQFoJJE6GC5bV2vfjEJ+FO/XDmKe/cQGiN3SqusuqEWxULiO1C2xphqHZe+C47fCfUxtuX+nMYJWGkj6soBKM3QvUz33ehKuFBP0L3UCGMdQlJnyrTxIJwr5udyQT2L4SBXs6wEApeCLWoXrzrMUwLQh0HKR6mT8K1XjFpKWv9R6hBlbRJReU0JzT0iklL2UZJqEUduEl5Hmzolzg9ladQGeFKR1+RCa4ehPpFbKXsglDbaVhMREPTkK1QFrgZmhXZqvJ2OeFST2+YyV7mhPpOwzw0NcxvekLHIqqwzZD8UDFwFuSHGn+YivAbE9IXMJz4MiPokhcM4I70zOySVy8XX8SH3r/zQ43oHjDhdUH7NdhxAscc5o0nP5TPfovugAT60GRxxYT0S04KEeKoxmAoditEaIeYkN7QKESIjanBsGyoFOHRYFjbVorwZMzoq90qEbozgyHurhGCQisS4ebxUPnGZyPh4fFQ+fHjn+XfYyBEgXGndocNhMXHczJh/tDfx42E62JA/X1cfOdvLx4D4eJunOkzi6EJ4QeE3tmY039LJUI4NxL6cFYlQicxfPrsUCVC2zcY8l+lCJdGSP0lpQgx33+aE6bGTXPC2wQIGaQUIZMUI9R/lA5nS/OCIDm3EGJLh/KH+3VeEVyXN64M5w+HimneNVxMM1RcOhahP1huMRIhzi2Gyg9HIsT54VA5/kiEOMcfqk4zEuHizlRrm1fb9QHhpZHQ5UeIApZ6qWGjispR4Lwu89U9fvVLhQn3qh+WM+axrOg2/TCd3BlLzbuXWqK2oQVOLOsWvSQL4ZFl7amXZCFkWj/sJTkI8/VDQWmlHIT5GjD9On4vyUGYr+MLepnkfS/GOHvL8r0YDPtpeultP804m+fy/TT674mawL42/fcm6r+/VP89whrv83bMqezV1/99C20n4t87M/q/9zSBd9f0f/9Q09D05R3SCbwHrGXgVnmXW//38XUcptUzFSZwLoap30R8O9tkAufT6H/GkP7nROmWQjWc9aX/eW16ldwaz9zTKg9uPDdR/7MvJ3B+qf5n0Orj9VvPEdalE9vPgtZlJhLO89YjTSSdya6HTySeq69D5ZR8N8IE7rfQ/46SCdwzo7rb73FXkP73PU3gzq4J3Lum/915E7j/cAJ3WOp/D+kE7pJV8cISyvuA1XMZtHc6T+Be7gncrY6zDHWsjVPLKHoRHpEqjt9GLVamg1Cd0lu1uEZBqIpBbTWj3YTmrwqI4JfIQCY07/Ij/p3SwEZoXmVHBK2OsCeheZYbEZy7ADoJ5UbsBuxBKPNA7Ryi/QjlNTddRqY3oaxOo8NN0BBi1y9fAGeTHT0loXlCsoXhDiKFavSE5jGVK5nyUkKwzUSI80WZtoVZ7fkgO6FMXqOPl2AgNNcsR28IkGP1szH0hOYxlKGOisK+U5Ce0DR3o7sNGzQXfnkRmjM4rk31IN0R4PSEppmMaXBA0+oSb0JzPVo3epDGxLATmua/UWajDTpOu+dIaF7S4SvibnphaisbYbbvZtih6tX2yYgmNPcRGG5LAwTRvrtJnAlNcxODYWIcB8Sb7uYIIMQ5lT8AowP8nnmSAEJscnzBYxUC//JZEz8kxP2YAHE2xwPJR/3HhRDPx7MlZJXKRtb5g/nHkRBrG3IfrBCE2+4/3EN8CPFgjZDLDxK6KPp4eD7EixDrEAPEAxIiEB/4NYsjIY4CghhY3idz0vYsEAfM3r1JXAkzrSODtStx5xkRQ/ZAFndCrM125QBE1Ze2h4Cz2nIwnTWJIMy0CXZLANxF5zZHGy5cAJa7QARdJlGEub4P11UIMChaeNCxn7C27UBvgTAaCFfXw3f3T7FLKGGh42kW3M/zxF+G6e1mGLc0XPrJ/HwPZieqqhmb/gfZ2ph/rLi6WgAAAABJRU5ErkJggg==" alt="Photo 2">
+        </a>
+    </td>
+
+    
+</tr>
+</table>
+
+  <!-- ✅ AngularJS: Counter Animation -->
+  <div ng-controller="myCtrl">
+    <h1 ng-mousemove="showCount = true; count = count + 1">Tiền tiết kiệm và tiền của bạn ở đây!!</h1>
+    <h2 ng-show="showCount">{{count}}</h2>
+  </div>
+
+  <!-- ✅ AngularJS: Toggle Visibility -->
+  <div ng-controller="myCtrl">
+    <button ng-click="show = !show">Toggle</button>
+    <div ng-show="show" class="animate-show">Hello, World!</div>
+  </div>
+
+  <!-- ✅ AngularJS: Live Clock -->
+  <div ng-controller="myCtrl">
+    <p>The time is:</p>
+    <h1>{{ theTime }}</h1>
+  </div>
+
+  <!-- ✅ AngularJS Scripts -->
+  <script>
+    var app = angular.module('myApp', ['ngAnimate']);
+
+    app.controller('myCtrl', function($scope, $interval) {
+      $scope.show = false;
+      $scope.count = 0;
+      $scope.showCount = false;
+
+      $scope.theTime = new Date().toLocaleTimeString();
+      $interval(function () {
+          $scope.theTime = new Date().toLocaleTimeString();
+      }, 1000);
+    });
+  </script>
+
+  <!-- ✅ Embedded YouTube Videos -->
+  <div class="container mt-3">
+    <h2>Aspect Ratio</h2>
+    <p>Let me know what is your favorite song!</p>
+
+    <h2>Aspect ratio 1:1</h2>
+    <div class="ratio ratio-1x1">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7RWbq-lbBlk?si=8cQ5Ng7Vwu5X7MaK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+
+    
+
+    
+
+    
+  <div class="container mt-3">
+    <h1>Pretty Ngọc xinh</h1>
+    <p>Bạn rất dễ thương và xinh đẹp.</p>
+    <div class="card">
+      <div class="card-body">Danh thiếp của một chú hổ xinh đẹp</div>
+    </div>
+    <p>Ikigai Kaisen</p>
+    <button type="button" class="btn btn-primary">Mục tiêu</button>
+    <button type="button" class="btn btn-secondary">Ý tưởng</button>
+    <button type="button" class="btn btn-success">Hình ảnh</button>
+  </div>
+
+   <!-- ✅ Social Media Footer -->
+<footer class="footer bg-dark text-white text-center py-3">
+  <div class="container">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="mt-2">© 2025 Ngoc B3@()+y | All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- ✅ Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("nav a.nav-link").forEach(link => {
+        link.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent Angular from handling the link
+          window.location.href = this.href; // Force full page load
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>

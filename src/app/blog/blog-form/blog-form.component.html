@@ -1,0 +1,7 @@
+<div class="blog-container">
+    <h1>Create a New Blog Post</h1>
+    <input type="text" [(ngModel)]="blog.title" placeholder="Enter blog title...">
+    <textarea [(ngModel)]="blog.content" placeholder="Write your blog post here..."></textarea>
+    <input type="file" (change)="onFileSelected($event)">
+    <button (click)="saveBlog()">Save Post</button>
+</div>
