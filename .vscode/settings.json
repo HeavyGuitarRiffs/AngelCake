@@ -1,0 +1,9 @@
+{
+  "files.autoSave": "onWindowChange",
+  "editor.quickSuggestions": { "other": true, "comments": false, "strings": true },
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.suggestOnTriggerCharacters": true,
+  "path-intellisense.mappings": {
+    "/assets/images": "./assets/images"
+  }
+}

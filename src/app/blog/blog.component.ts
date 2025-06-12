@@ -1,10 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogService } from './services/blog.service';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { BlogService } from '../services/blog.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  standalone: true,
+  imports: [CommonModule, RouterModule, HttpClientModule], // ✅ Add HttpClientModule
+  template: `
+    <h1>Welcome to the Blog</h1>
+    <ul>
+      <li *ngFor="let blog of blogs">
+        <a [routerLink]="['/blog', blog.id]">{{ blog.title }}</a>
+      </li>
+    </ul>
+  `
 })
 export class BlogComponent implements OnInit {
   blogs: any[] = [];

@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  standalone: true,
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  imports: [RouterModule] // ✅ Import RouterModule to support navigation
+  standalone: true, // ✅ This makes it a standalone component
+  imports: [RouterModule],
+  template: `<nav>
+    <a routerLink="/blog">Blog</a>
+  </nav>
+  <router-outlet></router-outlet>`
 })
 export class AppComponent { }
